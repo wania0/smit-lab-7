@@ -1,0 +1,396 @@
+/* Common style start */
+button , 
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html {
+    scroll-behavior:smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    font-size: 14px;
+    line-height: 26px;
+}
+.fullcontainer {
+    width:100% ;
+}
+.container {
+    width: 1140px;
+    margin: auto;
+}
+.sectiontitle {
+    width: 300px;
+    border-bottom: 3px solid red;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+section {
+    padding: 100px 0;
+    position: relative;
+
+}
+/* Common style end */
+
+/* home style start */
+header {
+    width: 100%;
+    background-color:rgba(0,0,0,0.6);
+    position: fixed;
+    z-index: 2;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+header .container .logo {
+    padding: 15px 0;
+    height: 75px;
+}
+header .container .logo img {
+    height: 100%;
+}
+header nav ul {
+    list-style-type: none;
+}
+header nav ul li {
+    display: inline-block;
+}
+header nav ul li a {
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: white;
+}
+header nav ul li a:hover {
+    background-color: brown;
+}
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("website/images/banner.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner h1 {
+    margin-top: 230px;
+    display: inline-block;
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.2rem;
+    font: 100;
+}
+.banner h1 span {
+    background-color: red;
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.banner p {
+    color: #fff;
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+    font-family:sans-serif;
+}
+.banner button {
+    background-color: red;
+    border:0;
+    outline: none;
+    color: #000;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 13px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+/* home style end */
+
+/* aboutsection start  */
+#aboutsection .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+     
+}
+#aboutsection .cards>div  {
+    width: 350px;
+    background-color: rgb(216, 205, 205);
+    padding: 35px;
+    color: #444;
+    text-align: center;
+    border-radius: 5px;
+    height: 215px;
+    border: 1px solid white;  
+}
+
+#aboutsection .cards > div:hover {
+    width: 400px;
+    margin-top: -20px;
+    border-color: red;
+    padding: 55px;
+    height: auto;
+}
+
+#aboutsection .cards>div .title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#aboutsection .cards>div p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+#aboutsection .cards>div button {
+    border: 1px solid red ;
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 12px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition:0.3s;
+}
+#aboutsection .cards>div:hover button{
+    background-color: red;
+    color:#fff ;
+}
+    
+/* aboutsection end  */
+
+/* program section start */
+.program {
+    background-color: #e2e2e2;
+}
+
+.program .boxcontainer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:50px ;
+}
+
+.program .boxcontainer .box {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px 0 #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+}
+.program .boxcontainer .box .cardimage {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+.program .boxcontainer .box .cardimage:after {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+.program .boxcontainer .box:nth-child(1) .cardimage , 
+.program .boxcontainer .box:nth-child(1) .cardimage:after {
+    background-image: url("website/images/programs/1.jpg");
+}
+.program .boxcontainer .box:nth-child(2) .cardimage , 
+.program .boxcontainer .box:nth-child(2) .cardimage:after {
+    background-image: url("website/images/programs/2.jpg");
+}
+.program .boxcontainer .box:nth-child(3) .cardimage , 
+.program .boxcontainer .box:nth-child(3) .cardimage:after {
+    background-image: url("website/images/programs/3.jpg");
+}
+.program .boxcontainer .box:nth-child(4) .cardimage , 
+.program .boxcontainer .box:nth-child(4) .cardimage:after {
+    background-image: url("website/images/programs/4.jpg");
+}
+.program .boxcontainer .box:hover .cardimage:after {
+    top:100%
+}
+.program .boxcontainer .box .programtitle {
+    font-size:16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+}
+.program .boxcontainer .box .donationcount {
+    font-size:13px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: #444;
+}
+.program .boxcontainer .box .donationcount span {
+    color: red;
+}
+.program .boxcontainer .box button {
+    position: absolute;
+    left: 50%;
+    background-color: red;
+    color:#fff;
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 60px;
+    padding: 7px 15px;
+    border:0;
+    outline: none;
+}
+/* program section end */
+
+/* gallery start here */
+.gallery .gallerycontainer{
+    column-count: 4;
+    column-gap: 20px;
+}
+.gallery .gallerycontainer .item {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.gallery .gallerycontainer img {
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+.gallery .gallerycontainer .title {
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    transition:0.4s ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.gallery .gallerycontainer .item:hover .title {
+    opacity: 1;
+}
+.gallery  .gallerycontainer .item:hover img {
+    transform: scale(1.2);
+}
+/* gallery end here */
+
+/* join section start here */
+.join {
+    background-image: url("website/images/pattern.jpg");
+    color: #fff;
+}
+.join .jointitle {
+    font-size: 40px;
+    font-weight: 100;
+}
+.join .jointitle span {
+    font-weight: 900;
+}
+.join button{
+    padding: 7px 15px;
+    margin-top: 20px;
+    border:0;
+    outline: none;
+    font-weight:600 ;
+    font-size:16px ;
+}
+.join button.joinnow {
+    margin-right: 10px;
+    background-color: #424242;
+}
+.join button.adoption{
+    background-color: gray;
+}
+
+
+/* join section end here */
+ /* footer start */
+footer {
+    background-color: #181818;
+    color: #7f7f7f;
+    padding: 50px 0;
+    font-size: 14px;
+}
+footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-gap:50px;
+}
+footer .title {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+    padding: 0 0 5px 0;
+}
+footer p {
+    margin-bottom: 10px;
+}
+footer .linkscontainer ul {
+    list-style-type: none;
+}
+footer .linkscontainer ul li a {
+    text-decoration: none;
+    color: #7f7f7f;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+footer .newslettercontainer img {
+    height: 40px;
+    margin-bottom: 11px;
+}
+footer .newslettercontainer input {
+    background-color: transparent;
+    border: 1px solid #7f7f7f;
+    outline: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 10px;
+    color: #ccc;
+    border-radius: 30px;
+
+}
+ /* footer end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
